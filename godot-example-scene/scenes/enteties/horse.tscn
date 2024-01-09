@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv8ucyyxwwg8h"]
+
+[ext_resource type="PackedScene" uid="uid://benvf2tpno0cm" path="res://assets/models/Horse.glb" id="1_cn1lh"]
+[ext_resource type="PackedScene" uid="uid://dqkya5lxwkt35" path="res://scenes/components/audio_component.tscn" id="2_wax3q"]
+
+[node name="Horse" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_cn1lh")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -0.00149155, 1.53417, -0.00833368)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+
+[node name="AudioComponent" parent="." instance=ExtResource("2_wax3q")]
+prompt = "WOah, this is a horse"
