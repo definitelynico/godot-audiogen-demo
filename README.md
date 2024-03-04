@@ -6,7 +6,7 @@ The setup is quite simple; I created a simple dummy API using Flask which took a
 In Godot, I wanted to follow the native pattern and have a separate component to put on things you want to make noise; the AudioComponent. The AudioComponent only requires a prompt; what the AI-model will use to generate audio (text-to-audio), and an AudioStreamPlayer where the sound will be played. When the "game" starts, every AudioComponent is collected and their prompts are sent to the API (HTTP) for the model to start generating, and once that's done, a signal fires telling the components to start the GET request and download + assign them to their source. The process could be triggered any time while the game is running, I just kept it like this for whatever reason.
 <br>
 <br>
-![AudioComponent Inspector](img/audio_component_data.png)&nbsp;![AudioComponent](img/audio_component.png)
+![AudioComponent](img/audio_component.png)&nbsp;![AudioComponent Inspector](img/audio_component_data.png)
 <br>
 <br>
 # Can I try it locally?
